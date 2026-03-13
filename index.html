@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salón de Belleza | Glamour & Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">×</button>
+  <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+  <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
+  <a href="#servicios" onclick="toggleMenu()">Servicios</a>
+  <a href="#galeria" onclick="toggleMenu()">Galería</a>
+  <a href="#precios" onclick="toggleMenu()">Precios</a>
+  <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <img src="img/logo.jpeg" alt="Salón de Belleza Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#precios">Precios</a></li>
+    <li><a href="#contacto" class="nav-cta">Reservar</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-banner">
+    <img src="img/imagen8.jpeg" alt="Salón de Belleza Banner">
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">Salón Premium de Belleza</div>
+    <h1 class="hero-title">
+      Tu belleza<br>merece lo<br><em>mejor</em>
+    </h1>
+    <p class="hero-subtitle">
+      Transformamos tu imagen con técnicas de vanguardia, productos de alta calidad y el toque artístico de nuestros expertos en belleza.
+    </p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Reservar Cita</a>
+      <a href="#servicios" class="btn-outline">Ver Servicios</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-number" data-count="500">0</div>
+      <div class="stat-label">Clientes felices</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" data-count="8">0</div>
+      <div class="stat-label">Años de exp.</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" data-count="20">0</div>
+      <div class="stat-label">Servicios</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item">Corte & Estilo</span>
+    <span class="marquee-item">Coloración Profesional</span>
+    <span class="marquee-item">Tratamientos Capilares</span>
+    <span class="marquee-item">Manicure & Pedicure</span>
+    <span class="marquee-item">Maquillaje Artístico</span>
+    <span class="marquee-item">Cejas & Pestañas</span>
+    <span class="marquee-item">Keratina & Alisado</span>
+    <span class="marquee-item">Ombre & Balayage</span>
+    <span class="marquee-item">Corte & Estilo</span>
+    <span class="marquee-item">Coloración Profesional</span>
+    <span class="marquee-item">Tratamientos Capilares</span>
+    <span class="marquee-item">Manicure & Pedicure</span>
+    <span class="marquee-item">Maquillaje Artístico</span>
+    <span class="marquee-item">Cejas & Pestañas</span>
+    <span class="marquee-item">Keratina & Alisado</span>
+    <span class="marquee-item">Ombre & Balayage</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="nosotros">
+  <div class="about-grid">
+    <div class="about-images reveal-left">
+      <div class="about-img-main">
+        <img src="img/imagen2.jpeg" alt="Salón de belleza">
+      </div>
+      <div class="about-img-second">
+        <img src="img/imagen3.jpeg" alt="Trabajo del salón">
+      </div>
+      <div class="about-gold-box">8+<br>Años</div>
+    </div>
+    <div class="reveal-right">
+      <div class="section-label">Nuestra Historia</div>
+      <h2 class="section-title">Arte & Pasión en cada <em>transformación</em></h2>
+      <p class="section-desc">
+        Somos un equipo de profesionales dedicados a realzar tu belleza natural. Con años de experiencia y constante actualización en tendencias, ofrecemos un servicio personalizado que va más allá de lo estético: te hacemos sentir extraordinaria.
+      </p>
+      <div class="about-features">
+        <div class="feature">
+          <div class="feature-icon">✂️</div>
+          <div class="feature-title">Técnicas Avanzadas</div>
+          <div class="feature-text">Capacitados en las últimas tendencias mundiales</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌟</div>
+          <div class="feature-title">Productos Premium</div>
+          <div class="feature-text">Solo usamos marcas profesionales certificadas</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💆</div>
+          <div class="feature-title">Atención Personalizada</div>
+          <div class="feature-text">Cada cliente recibe un servicio único</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🏆</div>
+          <div class="feature-title">Resultados Garantizados</div>
+          <div class="feature-text">Tu satisfacción es nuestra prioridad</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+  <div class="services-header reveal">
+    <div>
+      <div class="section-label">Lo que hacemos</div>
+      <h2 class="section-title">Nuestros <em>Servicios</em></h2>
+    </div>
+    <p class="section-desc" style="text-align:right">Descubre la gama completa de tratamientos y servicios de belleza que tenemos para ti</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal" onclick="openLightbox('https://i.ibb.co/PGFWVQbF/Whats-App-Image-2026-03-13-at-1-19-06-AM.jpg')">
+      <img src="img/imagen9.jpeg" alt="Coloración y Tintes">
+      <div class="service-overlay">
+        <div class="service-number">01</div>
+        <div class="service-line"></div>
+        <div class="service-name">Coloración & Tintes</div>
+        <div class="service-desc">Desde coloraciones completas hasta técnicas modernas como balayage, ombré y mechas californianas con resultados naturales y duraderos.</div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.1s" onclick="openLightbox('https://i.ibb.co/HWtMXV4B/Whats-App-Image-2026-03-13-at-1-19-06-AM-1.jpg')">
+      <img src="img/imagen4.jpeg" alt="Corte y Peinado">
+      <div class="service-overlay">
+        <div class="service-number">02</div>
+        <div class="service-line"></div>
+        <div class="service-name">Corte & Peinado</div>
+        <div class="service-desc">Cortes personalizados según la forma de tu rostro y estilo de vida, con acabados perfectos para cualquier ocasión.</div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s" onclick="openLightbox('https://i.ibb.co/tT5nQv5X/Whats-App-Image-2026-03-13-at-1-19-07-AM.jpg')">
+      <img src="img/imagen5.jpeg" alt="Tratamientos Capilares">
+      <div class="service-overlay">
+        <div class="service-number">03</div>
+        <div class="service-line"></div>
+        <div class="service-name">Keratina & Alisados</div>
+        <div class="service-desc">Tratamientos profesionales para cabello liso, brillante y sin frizz con resultados que duran meses.</div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.3s" onclick="openLightbox('https://i.ibb.co/PGFWVQbF/Whats-App-Image-2026-03-13-at-1-19-06-AM.jpg')">
+      <img src="img/imagen6.jpeg" alt="Mechas">
+      <div class="service-overlay">
+        <div class="service-number">04</div>
+        <div class="service-line"></div>
+        <div class="service-name">Mechas & Highlights</div>
+        <div class="service-desc">Iluminaciones perfectas para dar volumen y movimiento a tu cabello con técnicas de última generación.</div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.4s" onclick="openLightbox('https://i.ibb.co/HWtMXV4B/Whats-App-Image-2026-03-13-at-1-19-06-AM-1.jpg')">
+      <img src="img/imagen7.jpeg" alt="Tratamientos">
+      <div class="service-overlay">
+        <div class="service-number">05</div>
+        <div class="service-line"></div>
+        <div class="service-name">Tratamientos Capilares</div>
+        <div class="service-desc">Hidratación profunda, reconstrucción y nutrición para devolver la vida y brillo a tu cabello dañado.</div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.5s" onclick="openLightbox('https://i.ibb.co/tT5nQv5X/Whats-App-Image-2026-03-13-at-1-19-07-AM.jpg')">
+      <img src="img/imagen8.jpeg" alt="Maquillaje">
+      <div class="service-overlay">
+        <div class="service-number">06</div>
+        <div class="service-line"></div>
+        <div class="service-name">Maquillaje & Uñas</div>
+        <div class="service-desc">Maquillaje para eventos especiales, novias y sesiones fotográficas. Manicure y pedicure de lujo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="galeria">
+  <div class="gallery-header reveal">
+    <div class="section-label">Portafolio</div>
+    <h2 class="section-title">Nuestros <em>Trabajos</em></h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal" onclick="openLightbox('https://i.ibb.co/PGFWVQbF/Whats-App-Image-2026-03-13-at-1-19-06-AM.jpg')">
+      <img src="img/imagen10.jpeg" alt="Trabajo 1">
+      <div class="gallery-item-overlay"><div class="gallery-zoom">+</div></div>
+    </div>
+    <div class="gallery-item reveal" style="transition-delay:0.1s" onclick="openLightbox('https://i.ibb.co/HWtMXV4B/Whats-App-Image-2026-03-13-at-1-19-06-AM-1.jpg')">
+      <img src="img/imagen11.jpeg" alt="Trabajo 2">
+      <div class="gallery-item-overlay"><div class="gallery-zoom">+</div></div>
+    </div>
+    <div class="gallery-item reveal" style="transition-delay:0.2s" onclick="openLightbox('https://i.ibb.co/tT5nQv5X/Whats-App-Image-2026-03-13-at-1-19-07-AM.jpg')">
+      <img src="img/imagen9.jpeg" alt="Trabajo 3">
+      <div class="gallery-item-overlay"><div class="gallery-zoom">+</div></div>
+    </div>
+    <div class="gallery-item reveal" style="transition-delay:0.3s" onclick="openLightbox('https://i.ibb.co/n8H2MkbL/Whats-App-Image-2026-03-13-at-2-08-47-AM-copia.jpg')">
+      <img src="img/imagen13.jpeg" alt="Trabajo 4">
+      <div class="gallery-item-overlay"><div class="gallery-zoom">+</div></div>
+    </div>
+    <div class="gallery-item reveal" style="transition-delay:0.4s" onclick="openLightbox('https://i.ibb.co/chNqX7ZY/Whats-App-Image-2026-03-13-at-2-08-47-AM-1-copia.jpg')">
+      <img src="img/imagen14.jpeg" alt="Trabajo 5">
+      <div class="gallery-item-overlay"><div class="gallery-zoom">+</div></div>
+    </div>
+    <div class="gallery-item reveal" style="transition-delay:0.5s" onclick="openLightbox('https://i.ibb.co/HfxQkw6h/Whats-App-Image-2026-03-13-at-1-09-22-AM-copia.jpg')">
+      <img src="img/logo.jpeg" alt="Logo">
+      <div class="gallery-item-overlay"><div class="gallery-zoom">+</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER PROMO -->
+<div class="banner-section">
+  <img src="img/logo.jpeg" alt="Promoción">
+  <div class="banner-content">
+    <div class="section-label" style="justify-content:center">Oferta Especial</div>
+    <h2 class="section-title" style="text-align:center">¿Lista para tu <em>transformación</em>?</h2>
+    <p>Agenda tu cita hoy y recibe una consulta personalizada completamente gratis. ¡Tu nueva imagen te espera!</p>
+    <a href="#contacto" class="btn-primary">Agenda Ahora</a>
+  </div>
+</div>
+
+<!-- PRICING -->
+<section class="pricing" id="precios">
+  <div class="reveal" style="text-align:center">
+    <div class="section-label" style="justify-content:center">Inversión en ti</div>
+    <h2 class="section-title" style="text-align:center">Planes & <em>Precios</em></h2>
+    <p class="section-desc" style="margin:0 auto;text-align:center">Ofrecemos opciones para todos los presupuestos sin sacrificar calidad</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <div class="price-icon">✂️</div>
+      <div class="price-name">Esencial</div>
+      <div class="price-amount">s/25</div>
+      <div class="price-from">Desde</div>
+      <ul class="price-features">
+        <li>Corte de cabello</li>
+        <li>Lavado & secado</li>
+        <li>Peinado básico</li>
+        <li>Cepillado profesional</li>
+        <li>Consulta de imagen</li>
+      </ul>
+      <a href="#contacto" class="btn-outline" style="display:block;text-align:center">Reservar</a>
+    </div>
+    <div class="price-card featured reveal" style="transition-delay:0.1s">
+      <div class="price-featured-badge">Más Popular</div>
+      <div class="price-icon">💎</div>
+      <div class="price-name">Premium</div>
+      <div class="price-amount">s/75</div>
+      <div class="price-from">Desde</div>
+      <ul class="price-features">
+        <li>Coloración completa</li>
+        <li>Corte & peinado</li>
+        <li>Tratamiento capilar</li>
+        <li>Cejas & maquillaje</li>
+        <li>Manicure incluido</li>
+      </ul>
+      <a href="#contacto" class="btn-primary" style="display:block;text-align:center">Reservar</a>
+    </div>
+    <div class="price-card reveal" style="transition-delay:0.2s">
+      <div class="price-icon">👑</div>
+      <div class="price-name">Luxury</div>
+      <div class="price-amount">s/150</div>
+      <div class="price-from">Desde</div>
+      <ul class="price-features">
+        <li>Experiencia completa</li>
+        <li>Keratina o alisado</li>
+        <li>Coloración + mechas</li>
+        <li>Spa capilar premium</li>
+        <li>Mani + pedi de lujo</li>
+      </ul>
+      <a href="#contacto" class="btn-outline" style="display:block;text-align:center">Reservar</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" style="background:var(--dark)">
+  <div style="text-align:center" class="reveal">
+    <div class="section-label" style="justify-content:center">Opiniones</div>
+    <h2 class="section-title" style="text-align:center">Lo que dicen nuestras <em>clientas</em></h2>
+  </div>
+  <div class="testimonials-slider">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"El mejor salón que he visitado. El resultado del balayage superó todas mis expectativas, quedé completamente enamorada de mi cabello."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">A</div>
+        <div>
+          <div class="testimonial-name">Andrea Martínez</div>
+          <div class="testimonial-service">Balayage & Corte</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Profesionales increíbles, muy detallistas y atentas. La keratina me cambió la vida, mi cabello nunca había estado tan sano y brillante."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">V</div>
+        <div>
+          <div class="testimonial-name">Valentina López</div>
+          <div class="testimonial-service">Keratina Premium</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Vine para mi boda y quedé maravillada. El maquillaje duró toda la noche perfectamente, todas mis invitadas me preguntaron por el salón."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">C</div>
+        <div>
+          <div class="testimonial-name">Carolina Ríos</div>
+          <div class="testimonial-service">Maquillaje de Novia</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"El ambiente del salón es espectacular y el equipo es súper profesional. El tinte que me hicieron quedó exactamente como lo pedí, increíble."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">M</div>
+        <div>
+          <div class="testimonial-name">María Fernanda</div>
+          <div class="testimonial-service">Coloración Completa</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Llevo años viniendo aquí y nunca me han decepcionado. Siempre salen con algo nuevo y moderno. ¡No voy a ningún otro lado!"</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">S</div>
+        <div>
+          <div class="testimonial-name">Sofía Guzmán</div>
+          <div class="testimonial-service">Clienta VIP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contacto">
+  <div class="reveal" style="text-align:center">
+    <div class="section-label" style="justify-content:center">Contáctanos</div>
+    <h2 class="section-title" style="text-align:center">Reserva tu <em>cita</em></h2>
+    <p class="section-desc" style="margin:0 auto;text-align:center">Estamos aquí para hacer realidad la transformación que siempre has deseado</p>
+  </div>
+  <div class="contact-grid">
+    <div class="reveal-left">
+      <div class="contact-info-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Ubicación</div>
+          <div class="contact-value">Separa tu cita<br>Visítanos y transforma tu imagen</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Teléfono & WhatsApp</div>
+          <div class="contact-value">+51 969 478 493<br>Disponible Lunes a Sábado</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-label">Horario</div>
+          <div class="contact-value">Lunes – Viernes: 9:00 AM – 7:00 PM<br>Sábados: 9:00 AM – 5:00 PM</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon">📷</div>
+        <div>
+          <div class="contact-label">Síguenos</div>
+          <div class="contact-value">@salon.belleza<br>Instagram · Facebook · TikTok</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal-right">
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" class="form-input" placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-input" placeholder="Tu teléfono">
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-input" placeholder="Tu correo electrónico">
+      </div>
+      <div class="form-group">
+        <select class="form-select">
+          <option value="" disabled selected>¿Qué servicio deseas?</option>
+          <option>Corte & Peinado</option>
+          <option>Coloración & Tintes</option>
+          <option>Mechas & Balayage</option>
+          <option>Keratina & Alisado</option>
+          <option>Tratamiento Capilar</option>
+          <option>Manicure & Pedicure</option>
+          <option>Maquillaje</option>
+          <option>Cejas & Pestañas</option>
+          <option>Paquete Premium</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="date" class="form-input">
+      </div>
+      <div class="form-group">
+        <textarea class="form-textarea" placeholder="Cuéntanos tu idea o mensaje..."></textarea>
+      </div>
+      <button class="btn-primary" style="border:none;cursor:pointer;width:100%;font-size:13px" onclick="submitForm()">
+        ✦ Enviar Solicitud de Cita
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <img src="img/logo.jpeg" alt="Logo">
+      </div>
+      <p class="footer-tagline">Más que un salón, somos tu destino de belleza. Transformamos tu imagen con arte, pasión y las mejores técnicas del mundo.</p>
+      <div class="footer-social">
+        <a class="social-btn" href="https://www.instagram.com/chu_chuz_?igsh=dmxwczVpczFtaTB3" title="Instagram">📷</a>
+        <a class="social-btn" href="https://www.facebook.com/share/1GYhTfyPDU/" title="Facebook">💬</a>
+        <a class="social-btn" href="https://www.tiktok.com/@chuchuzrivasplata?_r=1&_t=ZS-94ezFXk1bMr" title="TikTok">🎵</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Servicios</div>
+      <ul class="footer-links">
+        <li><a href="#">Corte & Peinado</a></li>
+        <li><a href="#">Coloración</a></li>
+        <li><a href="#">Mechas & Balayage</a></li>
+        <li><a href="#">Keratina</a></li>
+        <li><a href="#">Manicure</a></li>
+        <li><a href="#">Maquillaje</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Empresa</div>
+      <ul class="footer-links">
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Galería</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#">Precios</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contacto</div>
+      <ul class="footer-links">
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/chu_chuz_?igsh=dmxwczVpczFtaTB3">Instagram</a></li>
+        <li><a href="#">Reservas Online</a></li>
+        <li><a href="#">Trabaja con Nosotros</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 <span>Salón de Belleza Jesus Rivasplata </span>. Todos los derechos reservados.</p>
+    <p class="footer-copy">Hecho con <span>♥</span> para realzar tu belleza</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/1000000000" class="whatsapp-float" title="WhatsApp">💬</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
