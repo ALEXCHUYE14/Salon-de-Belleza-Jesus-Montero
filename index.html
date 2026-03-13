@@ -400,7 +400,7 @@
   <div class="contact-grid">
     <div class="reveal-left">
       <div class="contact-info-item">
-        <div class="contact-icon">📍</div>
+        <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
         <div>
           <div class="contact-label">Ubicación</div>
           <div class="contact-value">Separa tu cita<br>Visítanos y transforma tu imagen</div>
@@ -431,17 +431,17 @@
     <div class="contact-form reveal-right">
       <div class="form-row">
         <div class="form-group">
-          <input type="text" class="form-input" placeholder="Tu nombre">
+          <input type="text" id="formName" class="form-input" placeholder="Tu nombre">
         </div>
         <div class="form-group">
-          <input type="tel" class="form-input" placeholder="Tu teléfono">
+          <input type="tel" id="formPhone" class="form-input" placeholder="Tu teléfono">
         </div>
       </div>
       <div class="form-group">
-        <input type="email" class="form-input" placeholder="Tu correo electrónico">
+        <input type="email" id="formEmail" class="form-input" placeholder="Tu correo electrónico">
       </div>
       <div class="form-group">
-        <select class="form-select">
+        <select id="formService" class="form-select">
           <option value="" disabled selected>¿Qué servicio deseas?</option>
           <option>Corte & Peinado</option>
           <option>Coloración & Tintes</option>
@@ -456,10 +456,10 @@
         </select>
       </div>
       <div class="form-group">
-        <input type="date" class="form-input">
+        <input type="date" id="formDate" class="form-input">
       </div>
       <div class="form-group">
-        <textarea class="form-textarea" placeholder="Cuéntanos tu idea o mensaje..."></textarea>
+        <textarea id="formMessage" class="form-textarea" placeholder="Cuéntanos tu idea o mensaje..."></textarea>
       </div>
       <button class="btn-primary" style="border:none;cursor:pointer;width:100%;font-size:13px" onclick="submitForm()">
         ✦ Enviar Solicitud de Cita

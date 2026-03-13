@@ -101,9 +101,36 @@
     if (e.target === this) closeLightbox();
   });
 
-  // FORM SUBMIT
+  // FORM SUBMIT - Send via WhatsApp
   function submitForm() {
-    alert('¡Gracias! Tu solicitud de cita ha sido enviada. Te contactaremos pronto. 💄✨');
+    const name = document.getElementById('formName').value.trim();
+    const phone = document.getElementById('formPhone').value.trim();
+    const email = document.getElementById('formEmail').value.trim();
+    const service = document.getElementById('formService').value;
+    const date = document.getElementById('formDate').value;
+    const message = document.getElementById('formMessage').value.trim();
+    
+    if (!name || !phone) {
+      alert('Por favor, completa tu nombre y teléfono para poder contactarte.');
+      return;
+    }
+    
+    // Format the WhatsApp message
+    let whatsappMessage = `*Nueva Reserva de Cita* 👋\n\n`;
+    whatsappMessage += `*Nombre:* ${name}\n`;
+    whatsappMessage += `*Teléfono:* ${phone}\n`;
+    if (email) whatsappMessage += `*Email:* ${email}\n`;
+    if (service) whatsappMessage += `*Servicio:* ${service}\n`;
+    if (date) whatsappMessage += `*Fecha:* ${date}\n`;
+    if (message) whatsappMessage += `*Mensaje:* ${message}\n`;
+    whatsappMessage += `\n_¡Gracias por elegirnos!_ 💄✨`;
+    
+    // Encode the message for WhatsApp URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const phoneNumber = '51969478493'; // Remove spaces and + sign
+    
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
   }
 
   // SMOOTH SCROLL for anchor links
